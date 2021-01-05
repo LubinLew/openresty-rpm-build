@@ -27,3 +27,26 @@ cd ~/rpmbuild/SPECS/
 spectool -g -R openresty.spec
 rpmbuild -ba openresty.spec
 ```
+
+## 
+
+```bash
+[root@centos x86_64]# rpm -ql openresty-zlib
+/usr/local/openresty/zlib/lib/libz.so
+/usr/local/openresty/zlib/lib/libz.so.1
+/usr/local/openresty/zlib/lib/libz.so.1.2.11
+
+[root@centos x86_64]# rpm -ql openresty-pcre
+/usr/local/openresty/pcre/lib/libpcre.so
+/usr/local/openresty/pcre/lib/libpcre.so.1
+/usr/local/openresty/pcre/lib/libpcre.so.1.2.12
+
+[root@centos x86_64]# rpm -ql openresty-openssl111
+/usr/local/openresty/openssl111/bin/openssl
+/usr/local/openresty/openssl111/lib/engines-1.1/capi.so
+/usr/local/openresty/openssl111/lib/engines-1.1/padlock.so
+/usr/local/openresty/openssl111/lib/libcrypto.so
+/usr/local/openresty/openssl111/lib/libcrypto.so.1.1
+/usr/local/openresty/openssl111/lib/libssl.so
+/usr/local/openresty/openssl111/lib/libssl.so.1.1
+```
