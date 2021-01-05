@@ -1,5 +1,6 @@
 # openresty-rpm-build
 build openresty rpm package on CentOS7
+> https://github.com/openresty/openresty-packaging
 
 ```bash
 #!/usr/bin/bash
