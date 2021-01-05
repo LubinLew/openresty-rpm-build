@@ -28,7 +28,7 @@ spectool -g -R openresty.spec
 rpmbuild -ba openresty.spec
 ```
 
-## 
+## rpm packages
 
 ```bash
 [root@centos x86_64]# rpm -ql openresty-zlib
