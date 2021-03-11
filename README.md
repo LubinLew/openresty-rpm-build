@@ -23,9 +23,12 @@ mkdir -p ~/rpmbuild/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
 cp openresty-packaging/rpm/SOURCES/*    ~/rpmbuild/SOURCES/
 cp openresty-packaging/rpm/SPECS/openresty.spec ~/rpmbuild/SPECS/
 
-## build the rpm
 cd ~/rpmbuild/SPECS/
+
+#### download the openresty source, you can put your own source here(zip package)
 spectool -g -R openresty.spec
+
+## build and package
 rpmbuild -ba openresty.spec
 ```
 
